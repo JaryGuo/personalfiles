@@ -1,4 +1,4 @@
-name:openai
+name: OpenAI-Override
 proxy-groups:
   - name: OpenAI
     type: select
