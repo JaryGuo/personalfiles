@@ -1,0 +1,8 @@
+name: redirect
+http:
+  # Force the use of Stash engine to handle TCP connections using HTTP protocol
+  # Captured connections can use advanced features such as rewriting and scripts
+  force-http-engine:
+    - '*:80'
+    - '*:4480' # BiliBili CDN
+    - '*:9102' # BiliBili CDN
