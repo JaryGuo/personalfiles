@@ -1,3 +1,4 @@
+name:openai
 proxy-groups:
   - name: OpenAI
     type: select
