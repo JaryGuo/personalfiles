@@ -1,0 +1,121 @@
+proxy-groups:
+  - name: OpenAI
+    type: select
+    proxies:
+      - 香港01-IEPL-倍率1.0
+      - 香港02-IEPL-倍率1.0
+      - 香港03-IEPL-倍率1.0
+      - 香港04-IEPL-倍率1.0
+      - 香港05-IEPL-倍率1.0
+      - 香港06-IEPL-倍率1.0
+      - 台湾01-IEPL-倍率1.0
+      - 台湾02-IEPL-倍率1.0
+      - 台湾03-IEPL-倍率1.0
+      - 台湾04-IEPL-倍率1.0
+      - 台湾05-IEPL-倍率1.0
+      - 台湾06-IEPL-倍率1.0
+      - 新加坡01-IEPL-倍率1.0
+      - 新加坡02-IEPL-倍率1.0
+      - 新加坡03-IEPL-倍率1.0
+      - 新加坡04-IEPL-倍率1.0
+      - 新加坡05-IEPL-倍率1.0
+      - 新加坡06-IEPL-倍率1.0
+      - 日本01-IEPL-倍率1.0
+      - 日本02-IEPL-倍率1.0
+      - 日本03-IEPL-倍率1.0
+      - 日本04-IEPL-倍率1.0
+      - 日本05-IEPL-倍率1.0
+      - 日本06-IEPL-倍率1.0
+      - 韩国01-IEPL-倍率1.0
+      - 韩国02-IEPL-倍率1.0
+      - 美国01-IEPL-倍率1.0
+      - 美国02-IEPL-倍率1.0
+      - 美国03-IEPL-倍率1.0
+      - 美国04-IEPL-倍率1.0
+      - 美国05-IEPL-倍率1.0
+      - 美国06-IEPL-倍率1.0
+      - 印度01-IEPL-倍率1.0
+      - 印度02-IEPL-倍率1.0
+      - 泰国01-IEPL-倍率1.0
+      - 泰国02-IEPL-倍率1.0
+      - 蒙古01-IEPL-倍率1.0
+      - 蒙古02-IEPL-倍率1.0
+      - 越南01-IEPL-倍率1.0
+      - 越南02-IEPL-倍率1.0
+      - 印尼01-IEPL-倍率1.0
+      - 印尼02-IEPL-倍率1.0
+      - 荷兰01-IEPL-倍率1.0
+      - 荷兰02-IEPL-倍率1.0
+      - 英国01-IEPL-倍率1.0
+      - 英国02-IEPL-倍率1.0
+      - 德国01-IEPL-倍率1.0
+      - 德国02-IEPL-倍率1.0
+      - 法国01-IEPL-倍率1.0
+      - 法国02-IEPL-倍率1.0
+      - 波兰01-IEPL-倍率1.0
+      - 波兰02-IEPL-倍率1.0
+      - 加拿大01-IEPL-倍率1.0
+      - 加拿大02-IEPL-倍率1.0
+      - 俄罗斯01-IEPL-倍率1.0
+      - 俄罗斯02-IEPL-倍率1.0
+      - 土耳其01-IEPL-倍率1.0
+      - 土耳其02-IEPL-倍率1.0
+      - 阿根廷01-IEPL-倍率1.0
+      - 阿根廷02-IEPL-倍率1.0
+      - 马来西亚01-IEPL-倍率1.0
+      - 马来西亚02-IEPL-倍率1.0
+      - 巴基斯坦01-IEPL-倍率1.0
+      - 巴基斯坦02-IEPL-倍率1.0
+      - 澳大利亚01-IEPL-倍率1.0
+      - 澳大利亚02-IEPL-倍率1.0
+      - 广港01-IPLC-倍率5.0
+      - 广港02-IPLC-倍率5.0
+      - 广港03-IPLC-倍率5.0
+      - 广港04-IPLC-倍率5.0
+      - 广港05-IPLC-倍率5.0
+      - 广港06-IPLC-倍率5.0
+      - 沪日01-IPLC-倍率6.0
+      - 沪日02-IPLC-倍率6.0
+      - 沪日03-IPLC-倍率6.0
+      - 沪日04-IPLC-倍率6.0
+      - 沪韩01-IPLC-倍率6.0
+      - 沪韩02-IPLC-倍率6.0
+      - 沪韩03-IPLC-倍率6.0
+      - 沪韩04-IPLC-倍率6.0
+      - 🧱直接连接
+rules:
+  - DOMAIN,browser-intake-datadoghq.com,OpenAI
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,OpenAI
+  - DOMAIN,openai-api.arkoselabs.com,OpenAI
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,OpenAI
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,OpenAI
+  - DOMAIN,production-openaicom-storage.azureedge.net,OpenAI
+  - DOMAIN,static.cloudflareinsights.com,OpenAI
+  - DOMAIN-SUFFIX,ai.com,OpenAI
+  - DOMAIN-SUFFIX,algolia.net,OpenAI
+  - DOMAIN-SUFFIX,api.statsig.com,OpenAI
+  - DOMAIN-SUFFIX,auth0.com,OpenAI
+  - DOMAIN-SUFFIX,chatgpt.com,OpenAI
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,OpenAI
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,OpenAI
+  - DOMAIN-SUFFIX,events.statsigapi.net,OpenAI
+  - DOMAIN-SUFFIX,featuregates.org,OpenAI
+  - DOMAIN-SUFFIX,host.livekit.cloud,OpenAI
+  - DOMAIN-SUFFIX,identrust.com,OpenAI
+  - DOMAIN-SUFFIX,intercom.io,OpenAI
+  - DOMAIN-SUFFIX,intercomcdn.com,OpenAI
+  - DOMAIN-SUFFIX,launchdarkly.com,OpenAI
+  - DOMAIN-SUFFIX,oaistatic.com,OpenAI
+  - DOMAIN-SUFFIX,oaiusercontent.com,OpenAI
+  - DOMAIN-SUFFIX,observeit.net,OpenAI
+  - DOMAIN-SUFFIX,openai.com,OpenAI
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,OpenAI
+  - DOMAIN-SUFFIX,openaicom.imgix.net,OpenAI
+  - DOMAIN-SUFFIX,segment.io,OpenAI
+  - DOMAIN-SUFFIX,sentry.io,OpenAI
+  - DOMAIN-SUFFIX,stripe.com,OpenAI
+  - DOMAIN-SUFFIX,turn.livekit.cloud,OpenAI
+  - DOMAIN-KEYWORD,openai,OpenAI
+  - IP-CIDR,24.199.123.28/32,no-resolve,OpenAI
+  - IP-CIDR,64.23.132.171/32,no-resolve,OpenAI
+  - IP-ASN,20473,no-resolve,OpenAI
