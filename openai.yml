@@ -103,17 +103,14 @@ rules:
   - IP-CIDR,64.23.132.171/32,no-resolve,OpenAI
   - IP-ASN,20473,no-resolve,OpenAI
 http:
-  # HTTP(S) 重写，支持header、302、307、reject多种策略
   url-rewrite:
     - ^http://g\.cn https://www.google.com transparent
-    - ^https?://www\.google\.cn https://www.google.com 302 # 直接返回一个 302 重定向的响应
-    - ^https?://ad\.example - reject # 拒绝请求
+    - ^https?://www\.google\.cn https://www.google.com 302
   header-rewrite:
     - ^http://g\.cn request-add DNT 1
     - ^http://g\.cn request-del DNT
     - ^http://g\.cn request-replace DNT 1
     - ^http://g\.cn request-replace-regex User-Agent Go-http-client curl
-    
     - ^http://g\.cn response-add DNT 1
     - ^http://g\.cn response-del DNT
     - ^http://g\.cn response-replace DNT 1
